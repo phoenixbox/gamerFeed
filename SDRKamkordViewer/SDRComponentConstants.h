@@ -11,6 +11,6 @@
 
 // Video Feed
 #define kSDRVideoFeedTableViewCell @"SDRVideoFeedTableViewCell"
-#define kSDRVideoFeedCellHeight 100.0f
+#define kSDRVideoFeedCellHeight 92.0
 
 #endif

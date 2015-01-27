@@ -1,1034 +1,510 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>8AD43F5F210A4C5D8FCAEBDF</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>8DC599C720C24AF299EB182F</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-SDRKamkordViewer.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Pods-SDRKamkordViewer.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C399B9AA6CEF4DE6A1ED215E</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>F151EDFE216644478BF6818C</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C59F0DBC1F9841B39447ED85</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Pods-SDRKamkordViewer-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>CBB3C3EF1A74A2EF001190FB</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>CBB3C3FA1A74A2EF001190FB</string>
-				<string>CBB3C4141A74A2EF001190FB</string>
-				<string>CBB3C3F91A74A2EF001190FB</string>
-				<string>8DC599C720C24AF299EB182F</string>
-				<string>C399B9AA6CEF4DE6A1ED215E</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CBB3C3F01A74A2EF001190FB</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>LastUpgradeCheck</key>
-				<string>0610</string>
-				<key>ORGANIZATIONNAME</key>
-				<string>SDR</string>
-				<key>TargetAttributes</key>
-				<dict>
-					<key>CBB3C3F71A74A2EF001190FB</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>6.1.1</string>
-					</dict>
-					<key>CBB3C4101A74A2EF001190FB</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>6.1.1</string>
-						<key>TestTargetID</key>
-						<string>CBB3C3F71A74A2EF001190FB</string>
-					</dict>
-				</dict>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>CBB3C3F31A74A2EF001190FB</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-				<string>Base</string>
-			</array>
-			<key>mainGroup</key>
-			<string>CBB3C3EF1A74A2EF001190FB</string>
-			<key>productRefGroup</key>
-			<string>CBB3C3F91A74A2EF001190FB</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>CBB3C3F71A74A2EF001190FB</string>
-				<string>CBB3C4101A74A2EF001190FB</string>
-			</array>
-		</dict>
-		<key>CBB3C3F31A74A2EF001190FB</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>CBB3C4191A74A2EF001190FB</string>
-				<string>CBB3C41A1A74A2EF001190FB</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>CBB3C3F41A74A2EF001190FB</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>CBB3C4041A74A2EF001190FB</string>
-				<string>CBB3C42E1A757CA0001190FB</string>
-				<string>CBB3C42A1A75741A001190FB</string>
-				<string>CBB3C4011A74A2EF001190FB</string>
-				<string>CBB3C3FE1A74A2EF001190FB</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>CBB3C3F51A74A2EF001190FB</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>D4B32BC8ABA84E5BBB06558A</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>CBB3C3F61A74A2EF001190FB</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>CBB3C4071A74A2EF001190FB</string>
-				<string>CBB3C42B1A75741A001190FB</string>
-				<string>CBB3C40C1A74A2EF001190FB</string>
-				<string>CBB3C4091A74A2EF001190FB</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>CBB3C3F71A74A2EF001190FB</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>CBB3C41B1A74A2EF001190FB</string>
-			<key>buildPhases</key>
-			<array>
-				<string>8AD43F5F210A4C5D8FCAEBDF</string>
-				<string>CBB3C3F41A74A2EF001190FB</string>
-				<string>CBB3C3F51A74A2EF001190FB</string>
-				<string>CBB3C3F61A74A2EF001190FB</string>
-				<string>C59F0DBC1F9841B39447ED85</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>SDRKamkordViewer</string>
-			<key>productName</key>
-			<string>SDRKamkordViewer</string>
-			<key>productReference</key>
-			<string>CBB3C3F81A74A2EF001190FB</string>
-			<key>productType</key>
-			<string>com.apple.product-type.application</string>
-		</dict>
-		<key>CBB3C3F81A74A2EF001190FB</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.application</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>SDRKamkordViewer.app</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>CBB3C3F91A74A2EF001190FB</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>CBB3C3F81A74A2EF001190FB</string>
-				<string>CBB3C4111A74A2EF001190FB</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CBB3C3FA1A74A2EF001190FB</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>CBB3C4271A75741A001190FB</string>
-				<string>CBB3C4281A75741A001190FB</string>
-				<string>CBB3C4291A75741A001190FB</string>
-				<string>CBB3C3FF1A74A2EF001190FB</string>
-				<string>CBB3C4001A74A2EF001190FB</string>
-				<string>CBB3C4021A74A2EF001190FB</string>
-				<string>CBB3C4031A74A2EF001190FB</string>
-				<string>CBB3C4211A756B38001190FB</string>
-				<string>CBB3C4051A74A2EF001190FB</string>
-				<string>CBB3C4081A74A2EF001190FB</string>
-				<string>CBB3C40A1A74A2EF001190FB</string>
-				<string>CBB3C3FB1A74A2EF001190FB</string>
-				<string>CBB3C42C1A757CA0001190FB</string>
-				<string>CBB3C42D1A757CA0001190FB</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>SDRKamkordViewer</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CBB3C3FB1A74A2EF001190FB</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>CBB3C3FC1A74A2EF001190FB</string>
-				<string>CBB3C3FD1A74A2EF001190FB</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Supporting Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CBB3C3FC1A74A2EF001190FB</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CBB3C3FD1A74A2EF001190FB</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>main.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CBB3C3FE1A74A2EF001190FB</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CBB3C3FD1A74A2EF001190FB</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CBB3C3FF1A74A2EF001190FB</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>AppDelegate.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CBB3C4001A74A2EF001190FB</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>AppDelegate.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CBB3C4011A74A2EF001190FB</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CBB3C4001A74A2EF001190FB</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CBB3C4021A74A2EF001190FB</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>SDRVideoFeed.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CBB3C4031A74A2EF001190FB</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>SDRVideoFeed.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CBB3C4041A74A2EF001190FB</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CBB3C4031A74A2EF001190FB</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CBB3C4051A74A2EF001190FB</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>CBB3C4061A74A2EF001190FB</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>Main.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CBB3C4061A74A2EF001190FB</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>name</key>
-			<string>Base</string>
-			<key>path</key>
-			<string>Base.lproj/Main.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CBB3C4071A74A2EF001190FB</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CBB3C4051A74A2EF001190FB</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CBB3C4081A74A2EF001190FB</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>folder.assetcatalog</string>
-			<key>path</key>
-			<string>Images.xcassets</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CBB3C4091A74A2EF001190FB</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CBB3C4081A74A2EF001190FB</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CBB3C40A1A74A2EF001190FB</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>CBB3C40B1A74A2EF001190FB</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>LaunchScreen.xib</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CBB3C40B1A74A2EF001190FB</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.xib</string>
-			<key>name</key>
-			<string>Base</string>
-			<key>path</key>
-			<string>Base.lproj/LaunchScreen.xib</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CBB3C40C1A74A2EF001190FB</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CBB3C40A1A74A2EF001190FB</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CBB3C40D1A74A2EF001190FB</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>CBB3C4181A74A2EF001190FB</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>CBB3C40E1A74A2EF001190FB</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>CBB3C40F1A74A2EF001190FB</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>CBB3C4101A74A2EF001190FB</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>CBB3C41E1A74A2EF001190FB</string>
-			<key>buildPhases</key>
-			<array>
-				<string>CBB3C40D1A74A2EF001190FB</string>
-				<string>CBB3C40E1A74A2EF001190FB</string>
-				<string>CBB3C40F1A74A2EF001190FB</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>CBB3C4131A74A2EF001190FB</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>SDRKamkordViewerTests</string>
-			<key>productName</key>
-			<string>SDRKamkordViewerTests</string>
-			<key>productReference</key>
-			<string>CBB3C4111A74A2EF001190FB</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle.unit-test</string>
-		</dict>
-		<key>CBB3C4111A74A2EF001190FB</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>SDRKamkordViewerTests.xctest</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>CBB3C4121A74A2EF001190FB</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>CBB3C3F01A74A2EF001190FB</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>CBB3C3F71A74A2EF001190FB</string>
-			<key>remoteInfo</key>
-			<string>SDRKamkordViewer</string>
-		</dict>
-		<key>CBB3C4131A74A2EF001190FB</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>CBB3C3F71A74A2EF001190FB</string>
-			<key>targetProxy</key>
-			<string>CBB3C4121A74A2EF001190FB</string>
-		</dict>
-		<key>CBB3C4141A74A2EF001190FB</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>CBB3C4171A74A2EF001190FB</string>
-				<string>CBB3C4151A74A2EF001190FB</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>SDRKamkordViewerTests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CBB3C4151A74A2EF001190FB</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>CBB3C4161A74A2EF001190FB</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Supporting Files</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CBB3C4161A74A2EF001190FB</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CBB3C4171A74A2EF001190FB</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>SDRKamkordViewerTests.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CBB3C4181A74A2EF001190FB</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CBB3C4171A74A2EF001190FB</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CBB3C4191A74A2EF001190FB</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_SYMBOLS_PRIVATE_EXTERN</key>
-				<string>NO</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.1</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>CBB3C41A1A74A2EF001190FB</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>YES</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>8.1</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>CBB3C41B1A74A2EF001190FB</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>CBB3C41C1A74A2EF001190FB</string>
-				<string>CBB3C41D1A74A2EF001190FB</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>CBB3C41C1A74A2EF001190FB</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>8DC599C720C24AF299EB182F</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>INFOPLIST_FILE</key>
-				<string>SDRKamkordViewer/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>CBB3C41D1A74A2EF001190FB</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>8DC599C720C24AF299EB182F</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>INFOPLIST_FILE</key>
-				<string>SDRKamkordViewer/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>CBB3C41E1A74A2EF001190FB</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>CBB3C41F1A74A2EF001190FB</string>
-				<string>CBB3C4201A74A2EF001190FB</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>CBB3C41F1A74A2EF001190FB</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>BUNDLE_LOADER</key>
-				<string>$(TEST_HOST)</string>
-				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<array>
-					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>INFOPLIST_FILE</key>
-				<string>SDRKamkordViewerTests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_HOST</key>
-				<string>$(BUILT_PRODUCTS_DIR)/SDRKamkordViewer.app/SDRKamkordViewer</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>CBB3C4201A74A2EF001190FB</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>BUNDLE_LOADER</key>
-				<string>$(TEST_HOST)</string>
-				<key>FRAMEWORK_SEARCH_PATHS</key>
-				<array>
-					<string>$(SDKROOT)/Developer/Library/Frameworks</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>INFOPLIST_FILE</key>
-				<string>SDRKamkordViewerTests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_HOST</key>
-				<string>$(BUILT_PRODUCTS_DIR)/SDRKamkordViewer.app/SDRKamkordViewer</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>CBB3C4211A756B38001190FB</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>SDRComponentConstants.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CBB3C4271A75741A001190FB</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>name</key>
-			<string>SDRVideoFeedTableViewCell.h</string>
-			<key>path</key>
-			<string>../SDRVideoFeedTableViewCell.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CBB3C4281A75741A001190FB</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>name</key>
-			<string>SDRVideoFeedTableViewCell.m</string>
-			<key>path</key>
-			<string>../SDRVideoFeedTableViewCell.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CBB3C4291A75741A001190FB</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.xib</string>
-			<key>name</key>
-			<string>SDRVideoFeedTableViewCell.xib</string>
-			<key>path</key>
-			<string>../SDRVideoFeedTableViewCell.xib</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CBB3C42A1A75741A001190FB</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CBB3C4281A75741A001190FB</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CBB3C42B1A75741A001190FB</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CBB3C4291A75741A001190FB</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>CBB3C42C1A757CA0001190FB</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>SDRCellActionsView.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CBB3C42D1A757CA0001190FB</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.objc</string>
-			<key>path</key>
-			<string>SDRCellActionsView.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>CBB3C42E1A757CA0001190FB</key>
-		<dict>
-			<key>fileRef</key>
-			<string>CBB3C42D1A757CA0001190FB</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>D4B32BC8ABA84E5BBB06558A</key>
-		<dict>
-			<key>fileRef</key>
-			<string>F151EDFE216644478BF6818C</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>F151EDFE216644478BF6818C</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>archive.ar</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>libPods-SDRKamkordViewer.a</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>CBB3C3F01A74A2EF001190FB</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CB6471731A75B8040040F729 /* SDRSpinner.m in Sources */ = {isa = PBXBuildFile; fileRef = CB6471721A75B8040040F729 /* SDRSpinner.m */; };
+		CBB3C3FE1A74A2EF001190FB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CBB3C3FD1A74A2EF001190FB /* main.m */; };
+		CBB3C4011A74A2EF001190FB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CBB3C4001A74A2EF001190FB /* AppDelegate.m */; };
+		CBB3C4041A74A2EF001190FB /* SDRVideoFeedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CBB3C4031A74A2EF001190FB /* SDRVideoFeedViewController.m */; };
+		CBB3C4091A74A2EF001190FB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CBB3C4081A74A2EF001190FB /* Images.xcassets */; };
+		CBB3C40C1A74A2EF001190FB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBB3C40A1A74A2EF001190FB /* LaunchScreen.xib */; };
+		CBB3C4181A74A2EF001190FB /* SDRKamkordViewerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CBB3C4171A74A2EF001190FB /* SDRKamkordViewerTests.m */; };
+		CBB3C42A1A75741A001190FB /* SDRVideoFeedTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CBB3C4281A75741A001190FB /* SDRVideoFeedTableViewCell.m */; };
+		CBB3C42B1A75741A001190FB /* SDRVideoFeedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBB3C4291A75741A001190FB /* SDRVideoFeedTableViewCell.xib */; };
+		CBB3C42E1A757CA0001190FB /* SDRCellActionsView.m in Sources */ = {isa = PBXBuildFile; fileRef = CBB3C42D1A757CA0001190FB /* SDRCellActionsView.m */; };
+		CBB3C4311A75802E001190FB /* SDRVideoStore.m in Sources */ = {isa = PBXBuildFile; fileRef = CBB3C4301A75802E001190FB /* SDRVideoStore.m */; };
+		CBB3C4341A758157001190FB /* SDRVideoChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = CBB3C4331A758157001190FB /* SDRVideoChannel.m */; };
+		CBB3C4371A75819F001190FB /* SDRVideo.m in Sources */ = {isa = PBXBuildFile; fileRef = CBB3C4361A75819F001190FB /* SDRVideo.m */; };
+		D4B32BC8ABA84E5BBB06558A /* libPods-SDRKamkordViewer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F151EDFE216644478BF6818C /* libPods-SDRKamkordViewer.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CBB3C4121A74A2EF001190FB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CBB3C3F01A74A2EF001190FB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CBB3C3F71A74A2EF001190FB;
+			remoteInfo = SDRKamkordViewer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		8DC599C720C24AF299EB182F /* Pods-SDRKamkordViewer.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SDRKamkordViewer.xcconfig"; path = "Pods/Pods-SDRKamkordViewer.xcconfig"; sourceTree = "<group>"; };
+		CB6471711A75B8040040F729 /* SDRSpinner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDRSpinner.h; sourceTree = "<group>"; };
+		CB6471721A75B8040040F729 /* SDRSpinner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDRSpinner.m; sourceTree = "<group>"; };
+		CBB3C3F81A74A2EF001190FB /* SDRKamkordViewer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SDRKamkordViewer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBB3C3FC1A74A2EF001190FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBB3C3FD1A74A2EF001190FB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CBB3C3FF1A74A2EF001190FB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CBB3C4001A74A2EF001190FB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CBB3C4021A74A2EF001190FB /* SDRVideoFeedViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDRVideoFeedViewController.h; sourceTree = "<group>"; };
+		CBB3C4031A74A2EF001190FB /* SDRVideoFeedViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDRVideoFeedViewController.m; sourceTree = "<group>"; };
+		CBB3C4081A74A2EF001190FB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CBB3C40B1A74A2EF001190FB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		CBB3C4111A74A2EF001190FB /* SDRKamkordViewerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SDRKamkordViewerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBB3C4161A74A2EF001190FB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CBB3C4171A74A2EF001190FB /* SDRKamkordViewerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SDRKamkordViewerTests.m; sourceTree = "<group>"; };
+		CBB3C4211A756B38001190FB /* SDRComponentConstants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SDRComponentConstants.h; sourceTree = "<group>"; };
+		CBB3C4271A75741A001190FB /* SDRVideoFeedTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SDRVideoFeedTableViewCell.h; path = ../SDRVideoFeedTableViewCell.h; sourceTree = "<group>"; };
+		CBB3C4281A75741A001190FB /* SDRVideoFeedTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SDRVideoFeedTableViewCell.m; path = ../SDRVideoFeedTableViewCell.m; sourceTree = "<group>"; };
+		CBB3C4291A75741A001190FB /* SDRVideoFeedTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SDRVideoFeedTableViewCell.xib; path = ../SDRVideoFeedTableViewCell.xib; sourceTree = "<group>"; };
+		CBB3C42C1A757CA0001190FB /* SDRCellActionsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDRCellActionsView.h; sourceTree = "<group>"; };
+		CBB3C42D1A757CA0001190FB /* SDRCellActionsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDRCellActionsView.m; sourceTree = "<group>"; };
+		CBB3C42F1A75802E001190FB /* SDRVideoStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDRVideoStore.h; sourceTree = "<group>"; };
+		CBB3C4301A75802E001190FB /* SDRVideoStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDRVideoStore.m; sourceTree = "<group>"; };
+		CBB3C4321A758157001190FB /* SDRVideoChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDRVideoChannel.h; sourceTree = "<group>"; };
+		CBB3C4331A758157001190FB /* SDRVideoChannel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDRVideoChannel.m; sourceTree = "<group>"; };
+		CBB3C4351A75819F001190FB /* SDRVideo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDRVideo.h; sourceTree = "<group>"; };
+		CBB3C4361A75819F001190FB /* SDRVideo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDRVideo.m; sourceTree = "<group>"; };
+		F151EDFE216644478BF6818C /* libPods-SDRKamkordViewer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SDRKamkordViewer.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CBB3C3F51A74A2EF001190FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4B32BC8ABA84E5BBB06558A /* libPods-SDRKamkordViewer.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBB3C40E1A74A2EF001190FB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		C399B9AA6CEF4DE6A1ED215E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F151EDFE216644478BF6818C /* libPods-SDRKamkordViewer.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CBB3C3EF1A74A2EF001190FB = {
+			isa = PBXGroup;
+			children = (
+				CBB3C3FA1A74A2EF001190FB /* SDRKamkordViewer */,
+				CBB3C4141A74A2EF001190FB /* SDRKamkordViewerTests */,
+				CBB3C3F91A74A2EF001190FB /* Products */,
+				8DC599C720C24AF299EB182F /* Pods-SDRKamkordViewer.xcconfig */,
+				C399B9AA6CEF4DE6A1ED215E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CBB3C3F91A74A2EF001190FB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CBB3C3F81A74A2EF001190FB /* SDRKamkordViewer.app */,
+				CBB3C4111A74A2EF001190FB /* SDRKamkordViewerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CBB3C3FA1A74A2EF001190FB /* SDRKamkordViewer */ = {
+			isa = PBXGroup;
+			children = (
+				CBB3C4271A75741A001190FB /* SDRVideoFeedTableViewCell.h */,
+				CBB3C4281A75741A001190FB /* SDRVideoFeedTableViewCell.m */,
+				CBB3C4291A75741A001190FB /* SDRVideoFeedTableViewCell.xib */,
+				CBB3C3FF1A74A2EF001190FB /* AppDelegate.h */,
+				CBB3C4001A74A2EF001190FB /* AppDelegate.m */,
+				CBB3C4021A74A2EF001190FB /* SDRVideoFeedViewController.h */,
+				CBB3C4031A74A2EF001190FB /* SDRVideoFeedViewController.m */,
+				CBB3C4211A756B38001190FB /* SDRComponentConstants.h */,
+				CBB3C4081A74A2EF001190FB /* Images.xcassets */,
+				CBB3C40A1A74A2EF001190FB /* LaunchScreen.xib */,
+				CBB3C3FB1A74A2EF001190FB /* Supporting Files */,
+				CBB3C42C1A757CA0001190FB /* SDRCellActionsView.h */,
+				CBB3C42D1A757CA0001190FB /* SDRCellActionsView.m */,
+				CBB3C42F1A75802E001190FB /* SDRVideoStore.h */,
+				CBB3C4301A75802E001190FB /* SDRVideoStore.m */,
+				CBB3C4321A758157001190FB /* SDRVideoChannel.h */,
+				CBB3C4331A758157001190FB /* SDRVideoChannel.m */,
+				CBB3C4351A75819F001190FB /* SDRVideo.h */,
+				CBB3C4361A75819F001190FB /* SDRVideo.m */,
+				CB6471711A75B8040040F729 /* SDRSpinner.h */,
+				CB6471721A75B8040040F729 /* SDRSpinner.m */,
+			);
+			path = SDRKamkordViewer;
+			sourceTree = "<group>";
+		};
+		CBB3C3FB1A74A2EF001190FB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CBB3C3FC1A74A2EF001190FB /* Info.plist */,
+				CBB3C3FD1A74A2EF001190FB /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CBB3C4141A74A2EF001190FB /* SDRKamkordViewerTests */ = {
+			isa = PBXGroup;
+			children = (
+				CBB3C4171A74A2EF001190FB /* SDRKamkordViewerTests.m */,
+				CBB3C4151A74A2EF001190FB /* Supporting Files */,
+			);
+			path = SDRKamkordViewerTests;
+			sourceTree = "<group>";
+		};
+		CBB3C4151A74A2EF001190FB /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CBB3C4161A74A2EF001190FB /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CBB3C3F71A74A2EF001190FB /* SDRKamkordViewer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBB3C41B1A74A2EF001190FB /* Build configuration list for PBXNativeTarget "SDRKamkordViewer" */;
+			buildPhases = (
+				8AD43F5F210A4C5D8FCAEBDF /* Check Pods Manifest.lock */,
+				CBB3C3F41A74A2EF001190FB /* Sources */,
+				CBB3C3F51A74A2EF001190FB /* Frameworks */,
+				CBB3C3F61A74A2EF001190FB /* Resources */,
+				C59F0DBC1F9841B39447ED85 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SDRKamkordViewer;
+			productName = SDRKamkordViewer;
+			productReference = CBB3C3F81A74A2EF001190FB /* SDRKamkordViewer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CBB3C4101A74A2EF001190FB /* SDRKamkordViewerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CBB3C41E1A74A2EF001190FB /* Build configuration list for PBXNativeTarget "SDRKamkordViewerTests" */;
+			buildPhases = (
+				CBB3C40D1A74A2EF001190FB /* Sources */,
+				CBB3C40E1A74A2EF001190FB /* Frameworks */,
+				CBB3C40F1A74A2EF001190FB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CBB3C4131A74A2EF001190FB /* PBXTargetDependency */,
+			);
+			name = SDRKamkordViewerTests;
+			productName = SDRKamkordViewerTests;
+			productReference = CBB3C4111A74A2EF001190FB /* SDRKamkordViewerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CBB3C3F01A74A2EF001190FB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = SDR;
+				TargetAttributes = {
+					CBB3C3F71A74A2EF001190FB = {
+						CreatedOnToolsVersion = 6.1.1;
+					};
+					CBB3C4101A74A2EF001190FB = {
+						CreatedOnToolsVersion = 6.1.1;
+						TestTargetID = CBB3C3F71A74A2EF001190FB;
+					};
+				};
+			};
+			buildConfigurationList = CBB3C3F31A74A2EF001190FB /* Build configuration list for PBXProject "SDRKamkordViewer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CBB3C3EF1A74A2EF001190FB;
+			productRefGroup = CBB3C3F91A74A2EF001190FB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CBB3C3F71A74A2EF001190FB /* SDRKamkordViewer */,
+				CBB3C4101A74A2EF001190FB /* SDRKamkordViewerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CBB3C3F61A74A2EF001190FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBB3C42B1A75741A001190FB /* SDRVideoFeedTableViewCell.xib in Resources */,
+				CBB3C40C1A74A2EF001190FB /* LaunchScreen.xib in Resources */,
+				CBB3C4091A74A2EF001190FB /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBB3C40F1A74A2EF001190FB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8AD43F5F210A4C5D8FCAEBDF /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C59F0DBC1F9841B39447ED85 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-SDRKamkordViewer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CBB3C3F41A74A2EF001190FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBB3C4041A74A2EF001190FB /* SDRVideoFeedViewController.m in Sources */,
+				CBB3C4341A758157001190FB /* SDRVideoChannel.m in Sources */,
+				CBB3C42E1A757CA0001190FB /* SDRCellActionsView.m in Sources */,
+				CBB3C42A1A75741A001190FB /* SDRVideoFeedTableViewCell.m in Sources */,
+				CB6471731A75B8040040F729 /* SDRSpinner.m in Sources */,
+				CBB3C4011A74A2EF001190FB /* AppDelegate.m in Sources */,
+				CBB3C4371A75819F001190FB /* SDRVideo.m in Sources */,
+				CBB3C3FE1A74A2EF001190FB /* main.m in Sources */,
+				CBB3C4311A75802E001190FB /* SDRVideoStore.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CBB3C40D1A74A2EF001190FB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CBB3C4181A74A2EF001190FB /* SDRKamkordViewerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CBB3C4131A74A2EF001190FB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CBB3C3F71A74A2EF001190FB /* SDRKamkordViewer */;
+			targetProxy = CBB3C4121A74A2EF001190FB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CBB3C40A1A74A2EF001190FB /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CBB3C40B1A74A2EF001190FB /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CBB3C4191A74A2EF001190FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CBB3C41A1A74A2EF001190FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CBB3C41C1A74A2EF001190FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8DC599C720C24AF299EB182F /* Pods-SDRKamkordViewer.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SDRKamkordViewer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CBB3C41D1A74A2EF001190FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8DC599C720C24AF299EB182F /* Pods-SDRKamkordViewer.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = SDRKamkordViewer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CBB3C41F1A74A2EF001190FB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SDRKamkordViewerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SDRKamkordViewer.app/SDRKamkordViewer";
+			};
+			name = Debug;
+		};
+		CBB3C4201A74A2EF001190FB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = SDRKamkordViewerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/SDRKamkordViewer.app/SDRKamkordViewer";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CBB3C3F31A74A2EF001190FB /* Build configuration list for PBXProject "SDRKamkordViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBB3C4191A74A2EF001190FB /* Debug */,
+				CBB3C41A1A74A2EF001190FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBB3C41B1A74A2EF001190FB /* Build configuration list for PBXNativeTarget "SDRKamkordViewer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBB3C41C1A74A2EF001190FB /* Debug */,
+				CBB3C41D1A74A2EF001190FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CBB3C41E1A74A2EF001190FB /* Build configuration list for PBXNativeTarget "SDRKamkordViewerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CBB3C41F1A74A2EF001190FB /* Debug */,
+				CBB3C4201A74A2EF001190FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CBB3C3F01A74A2EF001190FB /* Project object */;
+}

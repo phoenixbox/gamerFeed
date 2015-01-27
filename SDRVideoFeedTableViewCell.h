@@ -8,13 +8,17 @@
 
 #import <UIKit/UIKit.h>
 #import "SDRCellActionsView.h"
+#import "SDRVideo.h"
 
 @interface SDRVideoFeedTableViewCell : UITableViewCell
-@property (strong, nonatomic) IBOutlet UIView *videoThumbnail;
+@property (strong, nonatomic) IBOutlet UIImageView *videoThumbnail;
 @property (strong, nonatomic) IBOutlet UIView *videoDuration;
 @property (strong, nonatomic) IBOutlet UILabel *videoTitle;
 @property (strong, nonatomic) IBOutlet UILabel *videoDescription;
 
 @property (strong, nonatomic) IBOutlet SDRCellActionsView *cellActionsView;
+@property (strong, nonatomic) IBOutlet UIView *paddingContainer;
+
+@property (strong, nonatomic) SDRVideo *video;
 
 @end

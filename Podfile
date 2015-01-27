@@ -4,6 +4,9 @@
 target "SDRKamkordViewer" do
 pod 'AFNetworking', '~> 2.5'
 pod 'JSONModel', '~> 1.0'
+pod 'SDWebImage', '~> 3.7'
+pod 'NYXImagesKit', '~> 2.3'
+pod 'UIImage-Resize', '~> 1.0'
 end
 
 target "SDRKamkordViewerTests" do

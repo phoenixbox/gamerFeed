@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  SDRVideoFeedViewController.h
 //  SDRKamkordViewer
 //
 //  Created by Shane Rogers on 1/24/15.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SDRVideoFeed : UIViewController <UITableViewDelegate, UITableViewDataSource>
-
+@interface SDRVideoFeedViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
 @end
-
