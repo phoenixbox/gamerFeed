@@ -12,9 +12,8 @@
 
 @interface SDRVideoFeedTableViewCell : UITableViewCell
 @property (strong, nonatomic) IBOutlet UIImageView *videoThumbnail;
-@property (strong, nonatomic) IBOutlet UIView *videoDuration;
 @property (strong, nonatomic) IBOutlet UILabel *videoTitle;
-@property (strong, nonatomic) IBOutlet UILabel *videoDescription;
+@property (strong, nonatomic) IBOutlet UILabel *videoGameName;
 
 @property (strong, nonatomic) IBOutlet SDRCellActionsView *cellActionsView;
 @property (strong, nonatomic) IBOutlet UIView *paddingContainer;

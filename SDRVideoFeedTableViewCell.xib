@@ -13,17 +13,11 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7TH-vb-dSv" userLabel="Padding Container">
-                        <rect key="frame" x="5" y="4" width="310" height="67"/>
+                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7TH-vb-dSv" userLabel="Padding Container">
+                        <rect key="frame" x="5" y="5" width="310" height="67"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fTF-Vq-KqI">
-                                <rect key="frame" x="150" y="10" width="33" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CWt-rr-TEV">
-                                <rect key="frame" x="150" y="36" width="150" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fTF-Vq-KqI">
+                                <rect key="frame" x="150" y="11" width="33" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -32,12 +26,18 @@
                                 <rect key="frame" x="-96" y="-91" width="29" height="36"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QWv-jN-UbJ" userLabel="Video Thumbnail">
-                                <rect key="frame" x="0.0" y="0.0" width="140" height="67"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QWv-jN-UbJ" userLabel="Video Thumbnail">
+                                <rect key="frame" x="0.0" y="1" width="140" height="67"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="140" id="UhA-an-OYo"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Game Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CWt-rr-TEV">
+                                <rect key="frame" x="150" y="41" width="150" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -45,9 +45,11 @@
                             <constraint firstItem="fTF-Vq-KqI" firstAttribute="leading" secondItem="QWv-jN-UbJ" secondAttribute="trailing" constant="10" id="9LK-7M-pZq"/>
                             <constraint firstItem="QWv-jN-UbJ" firstAttribute="top" secondItem="7TH-vb-dSv" secondAttribute="top" id="9R7-qV-eTy"/>
                             <constraint firstAttribute="trailing" secondItem="CWt-rr-TEV" secondAttribute="trailing" constant="10" id="OhG-L3-Ano"/>
-                            <constraint firstItem="CWt-rr-TEV" firstAttribute="top" secondItem="fTF-Vq-KqI" secondAttribute="bottom" constant="5" id="d3p-Lv-4sr"/>
+                            <constraint firstItem="CWt-rr-TEV" firstAttribute="top" secondItem="fTF-Vq-KqI" secondAttribute="bottom" constant="3" id="cZQ-qQ-0SI"/>
                             <constraint firstItem="CWt-rr-TEV" firstAttribute="leading" secondItem="QWv-jN-UbJ" secondAttribute="trailing" constant="10" id="ht3-eK-dwt"/>
-                            <constraint firstItem="fTF-Vq-KqI" firstAttribute="top" secondItem="7TH-vb-dSv" secondAttribute="top" constant="10" id="iwq-Wp-8CQ"/>
+                            <constraint firstItem="fTF-Vq-KqI" firstAttribute="top" secondItem="7TH-vb-dSv" secondAttribute="top" constant="5" id="iwq-Wp-8CQ"/>
+                            <constraint firstAttribute="bottom" secondItem="CWt-rr-TEV" secondAttribute="bottom" constant="5" id="jja-oy-kBV"/>
+                            <constraint firstAttribute="trailing" secondItem="fTF-Vq-KqI" secondAttribute="trailing" constant="10" id="ni2-id-JAI"/>
                             <constraint firstAttribute="bottom" secondItem="QWv-jN-UbJ" secondAttribute="bottom" id="zR0-vs-Dxt"/>
                         </constraints>
                     </view>
@@ -62,11 +64,11 @@
             <connections>
                 <outlet property="cellActionsView" destination="Zu6-Fs-fba" id="1IU-dH-pFK"/>
                 <outlet property="paddingContainer" destination="7TH-vb-dSv" id="wRn-yn-aBJ"/>
-                <outlet property="videoDescription" destination="CWt-rr-TEV" id="7hw-bR-uDy"/>
+                <outlet property="videoGameName" destination="CWt-rr-TEV" id="HvR-V7-HVk"/>
                 <outlet property="videoThumbnail" destination="QWv-jN-UbJ" id="Vdd-B8-2Zz"/>
                 <outlet property="videoTitle" destination="fTF-Vq-KqI" id="ZtG-uR-NUz"/>
             </connections>
-            <point key="canvasLocation" x="441" y="511"/>
+            <point key="canvasLocation" x="441" y="509"/>
         </tableViewCell>
     </objects>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

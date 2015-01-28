@@ -79,6 +79,7 @@
 }
 
 - (void)addVideosTable {
+
     self.videoFeed = [[UITableView alloc] initWithFrame:self.view.frame style:UITableViewStylePlain];
     [self.videoFeed setBackgroundColor:[UIColor clearColor]];
     [self.videoFeed setSeparatorColor:[UIColor clearColor]];
@@ -115,6 +116,8 @@
         SDRVideo *video = [self.videoChannel.videos objectAtIndex:[indexPath row]];
 
         [cell.videoTitle setText:video.title];
+
+        [cell.videoGameName setText:video.gameName];
         [cell.videoThumbnail sd_setImageWithURL:[NSURL URLWithString:video.thumbnailUrl] placeholderImage:nil];
     }
     return cell;
