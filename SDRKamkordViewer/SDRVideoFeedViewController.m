@@ -51,6 +51,7 @@
         }
         [self showOrHideSpinner:NO];
     };
+
     [[SDRVideoStore sharedStore] fetchVideosWithCompletion:completionBlock];
 }
 
@@ -111,7 +112,6 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     NSArray *nibContents = [[NSBundle mainBundle] loadNibNamed:kSDRVideoFeedTableViewCell owner:nil options:nil];
     SDRVideoFeedTableViewCell *cell = [nibContents lastObject];
-
 
     if([tableView isEqual:self.videoFeed]) {
         SDRVideo *video = [self._videoChannel.videos objectAtIndex:[indexPath row]];
