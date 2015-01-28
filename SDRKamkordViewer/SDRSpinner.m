@@ -44,7 +44,7 @@
                             [UIImage imageNamed:@"13.png"], nil];
 
     self.animationDuration = 1.8;
-    [self setFrame:CGRectMake(0.0f, 0.0f, 110.0f, 75.0f)];
+    [self setFrame:CGRectMake(0.0, 0.0, 55.0, 37.5)];
     [self setCenter:view.center];
 }
 
