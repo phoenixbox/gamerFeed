@@ -42,7 +42,7 @@
 }
 
 - (void)fetchVideos {
-    [self showOrHideSpinner:YES];
+    [self showSpinner];
 
     void(^completionBlock)(SDRVideoChannel *obj, NSError *err)=^(SDRVideoChannel *obj, NSError *err){
         if(!err){
@@ -51,7 +51,7 @@
         } else {
             [self renderError:err];
         }
-        [self showOrHideSpinner:NO];
+        [self hideSpinner];
     };
 
     [[SDRVideoStore sharedStore] fetchVideosWithCompletion:completionBlock];
@@ -66,20 +66,19 @@
 
 }
 
-- (void)showOrHideSpinner:(BOOL)value {
-    if(value) {
-        [self.spinner setSpinnerImagesWithView:self.view];
+- (void)showSpinner {
+    [self.spinner setSpinnerImagesWithView:self.view];
 
-        [self.spinner startAnimating];
-        [self.view addSubview:self.spinner];
-    } else {
-        [self.spinner stopAnimating];
-        [self.spinner removeFromSuperview];
-    }
+    [self.spinner startAnimating];
+    [self.view addSubview:self.spinner];
+}
+
+- (void)hideSpinner {
+    [self.spinner stopAnimating];
+    [self.spinner removeFromSuperview];
 }
 
 - (void)addVideosTable {
-
     self.videoFeed = [[UITableView alloc] initWithFrame:self.view.frame style:UITableViewStylePlain];
     [self.videoFeed setBackgroundColor:[UIColor clearColor]];
     [self.videoFeed setSeparatorColor:[UIColor clearColor]];
@@ -116,9 +115,9 @@
         SDRVideo *video = [self.videoChannel.videos objectAtIndex:[indexPath row]];
 
         [cell.videoTitle setText:video.title];
-
         [cell.videoGameName setText:video.gameName];
         [cell.videoThumbnail sd_setImageWithURL:[NSURL URLWithString:video.thumbnailUrl] placeholderImage:nil];
+        [cell setSelectionStyle:UITableViewCellSelectionStyleNone];
     }
     return cell;
 }

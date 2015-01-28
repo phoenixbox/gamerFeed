@@ -16,7 +16,6 @@
 		CBB3C4181A74A2EF001190FB /* SDRKamkordViewerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CBB3C4171A74A2EF001190FB /* SDRKamkordViewerTests.m */; };
 		CBB3C42A1A75741A001190FB /* SDRVideoFeedTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CBB3C4281A75741A001190FB /* SDRVideoFeedTableViewCell.m */; };
 		CBB3C42B1A75741A001190FB /* SDRVideoFeedTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CBB3C4291A75741A001190FB /* SDRVideoFeedTableViewCell.xib */; };
-		CBB3C42E1A757CA0001190FB /* SDRCellActionsView.m in Sources */ = {isa = PBXBuildFile; fileRef = CBB3C42D1A757CA0001190FB /* SDRCellActionsView.m */; };
 		CBB3C4311A75802E001190FB /* SDRVideoStore.m in Sources */ = {isa = PBXBuildFile; fileRef = CBB3C4301A75802E001190FB /* SDRVideoStore.m */; };
 		CBB3C4341A758157001190FB /* SDRVideoChannel.m in Sources */ = {isa = PBXBuildFile; fileRef = CBB3C4331A758157001190FB /* SDRVideoChannel.m */; };
 		CBB3C4371A75819F001190FB /* SDRVideo.m in Sources */ = {isa = PBXBuildFile; fileRef = CBB3C4361A75819F001190FB /* SDRVideo.m */; };
@@ -53,8 +52,6 @@
 		CBB3C4271A75741A001190FB /* SDRVideoFeedTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SDRVideoFeedTableViewCell.h; path = ../SDRVideoFeedTableViewCell.h; sourceTree = "<group>"; };
 		CBB3C4281A75741A001190FB /* SDRVideoFeedTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SDRVideoFeedTableViewCell.m; path = ../SDRVideoFeedTableViewCell.m; sourceTree = "<group>"; };
 		CBB3C4291A75741A001190FB /* SDRVideoFeedTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = SDRVideoFeedTableViewCell.xib; path = ../SDRVideoFeedTableViewCell.xib; sourceTree = "<group>"; };
-		CBB3C42C1A757CA0001190FB /* SDRCellActionsView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDRCellActionsView.h; sourceTree = "<group>"; };
-		CBB3C42D1A757CA0001190FB /* SDRCellActionsView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDRCellActionsView.m; sourceTree = "<group>"; };
 		CBB3C42F1A75802E001190FB /* SDRVideoStore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDRVideoStore.h; sourceTree = "<group>"; };
 		CBB3C4301A75802E001190FB /* SDRVideoStore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDRVideoStore.m; sourceTree = "<group>"; };
 		CBB3C4321A758157001190FB /* SDRVideoChannel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDRVideoChannel.h; sourceTree = "<group>"; };
@@ -114,27 +111,18 @@
 		CBB3C3FA1A74A2EF001190FB /* SDRKamkordViewer */ = {
 			isa = PBXGroup;
 			children = (
-				CBB3C4271A75741A001190FB /* SDRVideoFeedTableViewCell.h */,
-				CBB3C4281A75741A001190FB /* SDRVideoFeedTableViewCell.m */,
-				CBB3C4291A75741A001190FB /* SDRVideoFeedTableViewCell.xib */,
+				CBCE95F61A78CB1100F60E1B /* Components */,
+				CBCE95F51A78CADC00F60E1B /* Constants */,
+				CBCE95F41A78CACB00F60E1B /* Channels */,
+				CBCE95F31A78CAC600F60E1B /* Stores */,
+				CBCE95F21A78CAC100F60E1B /* Models */,
+				CBCE95F11A78CABC00F60E1B /* Cells */,
+				CBCE95F01A78CAB500F60E1B /* ViewControllers */,
 				CBB3C3FF1A74A2EF001190FB /* AppDelegate.h */,
 				CBB3C4001A74A2EF001190FB /* AppDelegate.m */,
-				CBB3C4021A74A2EF001190FB /* SDRVideoFeedViewController.h */,
-				CBB3C4031A74A2EF001190FB /* SDRVideoFeedViewController.m */,
-				CBB3C4211A756B38001190FB /* SDRComponentConstants.h */,
 				CBB3C4081A74A2EF001190FB /* Images.xcassets */,
 				CBB3C40A1A74A2EF001190FB /* LaunchScreen.xib */,
 				CBB3C3FB1A74A2EF001190FB /* Supporting Files */,
-				CBB3C42C1A757CA0001190FB /* SDRCellActionsView.h */,
-				CBB3C42D1A757CA0001190FB /* SDRCellActionsView.m */,
-				CBB3C42F1A75802E001190FB /* SDRVideoStore.h */,
-				CBB3C4301A75802E001190FB /* SDRVideoStore.m */,
-				CBB3C4321A758157001190FB /* SDRVideoChannel.h */,
-				CBB3C4331A758157001190FB /* SDRVideoChannel.m */,
-				CBB3C4351A75819F001190FB /* SDRVideo.h */,
-				CBB3C4361A75819F001190FB /* SDRVideo.m */,
-				CB6471711A75B8040040F729 /* SDRSpinner.h */,
-				CB6471721A75B8040040F729 /* SDRSpinner.m */,
 			);
 			path = SDRKamkordViewer;
 			sourceTree = "<group>";
@@ -163,6 +151,69 @@
 				CBB3C4161A74A2EF001190FB /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CBCE95F01A78CAB500F60E1B /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CBB3C4021A74A2EF001190FB /* SDRVideoFeedViewController.h */,
+				CBB3C4031A74A2EF001190FB /* SDRVideoFeedViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		CBCE95F11A78CABC00F60E1B /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				CBB3C4271A75741A001190FB /* SDRVideoFeedTableViewCell.h */,
+				CBB3C4281A75741A001190FB /* SDRVideoFeedTableViewCell.m */,
+				CBB3C4291A75741A001190FB /* SDRVideoFeedTableViewCell.xib */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+		CBCE95F21A78CAC100F60E1B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				CBB3C4351A75819F001190FB /* SDRVideo.h */,
+				CBB3C4361A75819F001190FB /* SDRVideo.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		CBCE95F31A78CAC600F60E1B /* Stores */ = {
+			isa = PBXGroup;
+			children = (
+				CBB3C42F1A75802E001190FB /* SDRVideoStore.h */,
+				CBB3C4301A75802E001190FB /* SDRVideoStore.m */,
+			);
+			name = Stores;
+			sourceTree = "<group>";
+		};
+		CBCE95F41A78CACB00F60E1B /* Channels */ = {
+			isa = PBXGroup;
+			children = (
+				CBB3C4321A758157001190FB /* SDRVideoChannel.h */,
+				CBB3C4331A758157001190FB /* SDRVideoChannel.m */,
+			);
+			name = Channels;
+			sourceTree = "<group>";
+		};
+		CBCE95F51A78CADC00F60E1B /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				CBB3C4211A756B38001190FB /* SDRComponentConstants.h */,
+			);
+			name = Constants;
+			sourceTree = "<group>";
+		};
+		CBCE95F61A78CB1100F60E1B /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				CB6471711A75B8040040F729 /* SDRSpinner.h */,
+				CB6471721A75B8040040F729 /* SDRSpinner.m */,
+			);
+			name = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -302,7 +353,6 @@
 			files = (
 				CBB3C4041A74A2EF001190FB /* SDRVideoFeedViewController.m in Sources */,
 				CBB3C4341A758157001190FB /* SDRVideoChannel.m in Sources */,
-				CBB3C42E1A757CA0001190FB /* SDRCellActionsView.m in Sources */,
 				CBB3C42A1A75741A001190FB /* SDRVideoFeedTableViewCell.m in Sources */,
 				CB6471731A75B8040040F729 /* SDRSpinner.m in Sources */,
 				CBB3C4011A74A2EF001190FB /* AppDelegate.m in Sources */,

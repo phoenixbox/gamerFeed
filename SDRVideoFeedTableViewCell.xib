@@ -13,21 +13,17 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7TH-vb-dSv" userLabel="Padding Container">
-                        <rect key="frame" x="5" y="5" width="310" height="67"/>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7TH-vb-dSv" userLabel="Padding Container">
+                        <rect key="frame" x="5" y="4" width="310" height="67"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fTF-Vq-KqI">
-                                <rect key="frame" x="150" y="11" width="33" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fTF-Vq-KqI">
+                                <rect key="frame" x="150" y="5" width="150" height="33"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zu6-Fs-fba" customClass="SDRCellActionsView">
-                                <rect key="frame" x="-96" y="-91" width="29" height="36"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="QWv-jN-UbJ" userLabel="Video Thumbnail">
-                                <rect key="frame" x="0.0" y="1" width="140" height="67"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QWv-jN-UbJ" userLabel="Video Thumbnail">
+                                <rect key="frame" x="0.0" y="0.0" width="140" height="67"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="140" id="UhA-an-OYo"/>
                                 </constraints>
@@ -62,7 +58,6 @@
                 </constraints>
             </tableViewCellContentView>
             <connections>
-                <outlet property="cellActionsView" destination="Zu6-Fs-fba" id="1IU-dH-pFK"/>
                 <outlet property="paddingContainer" destination="7TH-vb-dSv" id="wRn-yn-aBJ"/>
                 <outlet property="videoGameName" destination="CWt-rr-TEV" id="HvR-V7-HVk"/>
                 <outlet property="videoThumbnail" destination="QWv-jN-UbJ" id="Vdd-B8-2Zz"/>
